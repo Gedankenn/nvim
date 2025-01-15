@@ -4,7 +4,7 @@ return {
   },
   {
     "nvim-telescope/telescope.nvim",
-    tag = "0.1.5",
+    --tag = "0.1.5",
     dependencies = { "nvim-lua/plenary.nvim", "nvim-lua/popup.nvim", "BurntSushi/ripgrep" },
     config = function()
       require("telescope").setup({
