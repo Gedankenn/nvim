@@ -73,6 +73,7 @@ return {
         -- pyright will be automatically installed with mason and loaded with lspconfig
         pyright = {},
       },
+      autoformat = false
     },
   },
 
@@ -174,6 +175,12 @@ return {
         --[[add your custom lualine config here]]
       }
     end,
+  },
+
+  {
+      "neovim/nvim-lspconfig",
+       opts= {autoformat = false,
+              maxLineLength = 120}
   },
 
   -- use mini.starter instead of alpha
